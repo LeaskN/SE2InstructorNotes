@@ -1,0 +1,62 @@
+body {
+  color: red;
+}
+
+.paragraph1{
+  color: blue;
+}
+
+#paragraph2{
+  color: orange;
+}
+
+/* target all instances of .innerSquare that are inside .square */
+.square .innerSquare {
+  background-color: purple;
+}
+
+/* target all immediate child instances of .innerSquare that are inside .square */
+.square > .innerSquare {
+  background-color: pink;
+}
+
+/* group target */
+.square, .innerSquare, .paragraph1{
+  color: green;
+}
+
+p{
+  color: purple;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.square{
+  /* the following are for self-styling */
+  height: 300px;
+  width: 300px;
+  background-color: rgb(223, 87, 87);
+  padding: 20px;
+  margin: 30px;
+  border: 4px solid brown;
+
+  /* the following styles contents of the square */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerSquare{
+  min-height: 50px;
+  min-width: 50px;
+  background-color: rgb(9, 9, 58);
+  border: 3px solid white;
+  margin: 3px;
+}
+

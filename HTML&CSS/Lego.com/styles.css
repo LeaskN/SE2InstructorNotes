@@ -1,0 +1,64 @@
+body {
+  font-family: Cera Pro,sans-serif;
+  /* background-image: url(https://www.lego.com/cdn/cs/set/assets/bltb754b15ddc23c6e6/10270-content-block-standard-2.jpg?fit=crop&format=webply&quality=80&width=635&height=440&dpr=1);
+  background-size: cover; */
+  width: 100vw;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  width: 100%
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#featuredItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 4%
+}
+
+#featuredItem > img {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFED00;
+}
+
+#navbar > .col {
+  margin-left: 10px;
+}
+
+#navBarRight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner{
+  height: 80px;
+  width: 100vw;
+  color: white;
+  background-color: rgb(54, 23, 90);
+}
+
+img{
+  max-width: 80%;
+}
+
+h6{
+  margin: 0px;
+}

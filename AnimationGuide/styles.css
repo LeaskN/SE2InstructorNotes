@@ -1,0 +1,18 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: steelblue;
+  overflow-y: hidden;
+}
+
+#image {
+  height: 590px;
+  width: 435px;/* width of image divided by number of frames */
+  transform: scale(.1);
+  
+  background: url('https://i.pinimg.com/originals/3f/28/6f/3f286f7d4cfd204b809cf8bbaeaa832a.png');
+  /* comment in the following line to visualize the way this code is working */
+  /* border-right: 812px solid rgba(255, 255, 255, .5);  */
+}
