@@ -9,3 +9,25 @@
   // DIV by 5: Buzz
   // DIV by 3 or 5: FizzBuzz
   // DIV by neither: the number
+
+function fizzBuzz(n){
+  let arr = [];
+
+  for(let i = 1; i <= n; i++){
+    if(i % 5 == 0 && i % 3 == 0){
+      arr.push('FizzBuzz');
+    } else if( i % 5 == 0){
+      arr.push('Buzz');
+    } else if( i % 3 == 0){
+      arr.push('Fizz');
+    } else {
+      arr.push(i);
+    }
+  }
+
+  return arr;
+}
+
+console.log(fizzBuzz(30));
+// console.log(fizzBuzz(15));
+// console.log(fizzBuzz(40));

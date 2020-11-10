@@ -1,0 +1,14 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: pink;
+  overflow-y: hidden;
+}
+
+canvas{
+  border: 3px solid salmon;
+  border-radius: 10px;
+  background-color: steelblue;
+}
