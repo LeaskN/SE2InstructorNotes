@@ -27,10 +27,10 @@ const getPokemonById = (request, response) => {
   });
 }
 
-const createPokemon = (request, response) => {
-  const { name, type } = request.body;
+const addPokemon = (request, response) => {
+  const { name, image, attackname, attackdesc, health, type } = request.body;
 
-  pool.query('INSERT INTO pokemon (name, type) VALUES ($1, $2) RETURNING *', [name, type], (error, results) => {
+  pool.query('INSERT INTO pokemon (name, image, attackname, attackdesc, health, type) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [name, image, attackname, attackdesc, health, type], (error, results) => {
     if(error){
       throw error;
     }
@@ -42,5 +42,5 @@ const createPokemon = (request, response) => {
 module.exports = {
   getPokemon,
   getPokemonById,
-  createPokemon
+  addPokemon
 }

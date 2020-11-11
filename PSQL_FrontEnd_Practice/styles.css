@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  justify-content: center;
+
+  height: 300px;
+  width: 250px;
+  box-shadow: 4px 4px 4px 8px;
+  padding: 10px;
+  background-size: cover;
+  margin: 20px;
+}
+
+#allPokemon{
+  display: flex;
+  flex-wrap: wrap;
+}

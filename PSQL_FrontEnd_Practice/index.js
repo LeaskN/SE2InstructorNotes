@@ -1,8 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const app = express();
 const db = require('./queries');
 const port = 3000;
+
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(
@@ -11,16 +14,15 @@ app.use(
   })
 );
 
-// CRUD Add, GET, Edit, Delete
-
 app.get('/', (request, response) => {
   response.json({ info: 'Node.js, Epxress, and Postgres API'})
 });
 
 app.get('/pokemon', db.getPokemon);
 app.get('/pokemon/:id', db.getPokemonById);
-app.get('/pokemon', db.createPokemon);
+app.post('/pokemon', db.addPokemon);
+
 
 app.listen(port, () => {
-  console.log(`App running on port ${port} 🎈`)
+  console.log(`App running on port ${port} 👓`)
 });

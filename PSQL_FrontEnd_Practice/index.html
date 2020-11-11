@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Cards!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>My First Full Stack App</h1>
+
+  <input id="name" placeholder="name" value=""/>
+  <input id="image" placeholder="image" value=""/>
+  <input id="attackname" placeholder="attackname" value=""/>
+  <input id="attackdesc" placeholder="attackdesc" value=""/>
+  <input id="health" placeholder="health" value=""/>
+  <input id="type" placeholder="type" value=""/>
+  <br>
+  <button onclick=addPokemon(event)>Add Pokemon</button>
+  <hr/>
+
+  <button onclick=getPokemon(event)>Search</button>
+
+  <div id="allPokemon"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
