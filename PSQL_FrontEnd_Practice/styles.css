@@ -1,6 +1,7 @@
 .card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
 
   height: 300px;
   width: 250px;
@@ -8,9 +9,55 @@
   padding: 10px;
   background-size: cover;
   margin: 20px;
+
+  transition: all .4s;
+}
+
+.card:hover{
+  box-shadow:5px 5px 5px 8px rgb(141, 11, 28);
 }
 
 #allPokemon{
   display: flex;
   flex-wrap: wrap;
+}
+
+.pokemonButtonsContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemonButtonsContainer > button {
+  margin: 3px;
+}
+
+.button{
+  min-height: 30px;
+}
+
+#singleView{
+  position: fixed;
+  top: 20%;
+  left: 20%;
+
+  display: none;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.767);
+  width: 60%;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.767);
+}
+
+#singleView img{
+  max-width: 500px;
+}
+
+#closeButton{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
 }

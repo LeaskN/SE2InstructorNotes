@@ -9,19 +9,29 @@
 <body>
   <h1>My First Full Stack App</h1>
 
+  <p>To add a new Pokemon, fill in the immediate fields below.</p>
+  <button onclick=addPokemon(event)>Add Pokemon</button>
+  <br/>
   <input id="name" placeholder="name" value=""/>
   <input id="image" placeholder="image" value=""/>
   <input id="attackname" placeholder="attackname" value=""/>
   <input id="attackdesc" placeholder="attackdesc" value=""/>
   <input id="health" placeholder="health" value=""/>
   <input id="type" placeholder="type" value=""/>
-  <br>
-  <button onclick=addPokemon(event)>Add Pokemon</button>
+  <br/>
+
+  <p>To edit, fill in the changes to be made above (all fields are required) and pass the DB ID below.</p>
+  <button onclick=editPokemon(event)>Edit Pokemon</button>
+  <input id="id" placeholder="ID" value=""/>
   <hr/>
 
   <button onclick=getPokemon(event)>Search</button>
 
   <div id="allPokemon"></div>
+
+  <div id="singleView">
+    <button id="closeButton" onclick=hidePopup(event)>X</button>
+  </div>
 
   <script src="scripts.js"></script>
 </body>

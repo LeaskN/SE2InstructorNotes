@@ -21,6 +21,9 @@ app.get('/', (request, response) => {
 app.get('/pokemon', db.getPokemon);
 app.get('/pokemon/:id', db.getPokemonById);
 app.post('/pokemon', db.addPokemon);
+app.delete('/pokemon/:id', db.deletePokemonById);
+app.put('/pokemon/:id', db.updatePokemonById);
+
 
 
 app.listen(port, () => {
