@@ -47,6 +47,7 @@
 }
 
 .link:hover{
+  cursor: pointer;
   color: #f82500;
 }
 

@@ -16,11 +16,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/Portfolio" component={Portfolio} /> 
-            {/* <Route />
-            <Route />
-            <Route /> */}
           </Switch>
         </Router>
+        {/* <Portfolio id="portfolio"/> */}
       </div>
     </div>
   );
