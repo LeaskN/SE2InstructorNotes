@@ -1,7 +1,9 @@
 .App {
   text-align: center;
-  padding-top: 100px;
   background-color: #282c34;
+  min-height: 800px;
+  color: white;
+  height: 100vh;
 }
 
 .App-logo {
@@ -40,10 +42,40 @@
 }
 
 .link{
-  color:rgb(26, 26, 26);
+  color:white;
   text-decoration: none;  
 }
 
 .link:hover{
-  color: teal;
+  color: #f82500;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 1600px;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.homeBackground{
+  background-image: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  background-color:rgba(0, 0, 0, .5);
 }

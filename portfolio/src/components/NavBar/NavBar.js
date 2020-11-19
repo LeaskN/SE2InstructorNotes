@@ -5,11 +5,12 @@ function NavBar () {
   return(
     <div className="NavBar">
       <Logo/>
-      <div>
-        <a className='link' href='https://google.com'>Test</a>
-        <a className='link' href='https://google.com'>Test</a>
-        <a className='link' href='https://google.com'>Test</a>
-        <a className='link' href='https://google.com'>Test</a>
+      <div className='navLinks'>
+        <a className='link' href='/About'>About</a>
+        <a className='link' href='/Portfolio'>Portfolio</a>
+        <a className='link' href='/Exerience'>Exerience</a>
+        <a className='link' href='/Education'>Education</a>
+        <a className='link' href='/Contact'>Contact</a>
       </div>
     </div>
   )
